@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="516dp"
+        android:layout_height="92dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="-65dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="-10dp"
+        android:padding="-100dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="140dp"
+        android:fontFamily="@font/productsansregular"
+        android:text="CloQR Scanner"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+
+    <ImageView
+        android:layout_width="107dp"
+        android:layout_height="124dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="150dp"
+        android:padding="20dp"
+        android:src="@drawable/redple"
+
+        />
+
+
+</LinearLayout>
