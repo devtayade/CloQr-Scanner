@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-        setAds();
+
 
         scantext=(TextView)findViewById(R.id.scantext);
         scanbtn=(Button) findViewById(R.id.scanbtn);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                             super.onAdDismissedFullScreenContent();
                             startActivity(new Intent(getApplicationContext(),scannerView.class));
                             mInterstitialAd = null;
-                            setAds();
+                            
                         }
                     });
                 }
@@ -109,28 +109,6 @@ public class MainActivity extends AppCompatActivity {
                 // to the app after tapping on an ad.
             }
         });
-
-    }
-    public void setAds(){
-
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(this,getString(R.string.adsUnit), adRequest,
-                new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-                        mInterstitialAd = interstitialAd;
-
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                        mInterstitialAd = null;
-                    }
-                });
 
     }
 }
